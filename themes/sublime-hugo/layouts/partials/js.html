@@ -1,13 +1,13 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="js/scrollreveal.min.js"></script>
-<script type='application/javascript' src='js/smooth-scrollbar.js'></script>
-<script src="js/baffle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/scrollreveal.min.js"></script>
+<script type='application/javascript' src='/js/smooth-scrollbar.js'></script>
+<script src="/js/baffle.min.js"></script>
+<script src="/js/main.js"></script>
 {{ range .Site.Params.custom_js }}
 <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
 {{ end}}
 
-<!-- {{ template "_internal/google_analytics.html" . }} -->
+{{ template "_internal/google_analytics.html" . }}
 
 
 {{ "<!-- Syntax highlighting -->" | safeHTML }}
