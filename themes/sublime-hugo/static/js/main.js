@@ -1,7 +1,7 @@
 window.onload = function() {
 
     var $menuIcon = document.getElementsByClassName('menu-icon')[0],
-        $offCanva = document.getElementsByClassName('off-canvas')[0];
+        $offCanva = document.getElementsByClassName('off-canvas')[0],
         $siteWrap = document.getElementsByClassName('site-wrapper')[0];
 
 
@@ -43,7 +43,6 @@ window.onload = function() {
             removeClass(element, className);
         }
     }
-
 
     // With options
     let b = baffle('.baffle', {
